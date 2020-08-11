@@ -1,22 +1,22 @@
 @keyframes bgcolor {
     0% {
-        background-color: #45a3e5
+        background-color: #01D05B
     }
 
     30% {
-        background-color: #66bf39
+        background-color: #2F9FC5
     }
 
     60% {
-        background-color: #eb670f
+        background-color: #6E60F9
     }
 
     90% {
-        background-color: #f35
+        background-color: #D3509B
     }
 
     100% {
-        background-color: #864cbf
+        background-color: #F97216
     }
 }
 
@@ -74,8 +74,8 @@ body {
 }
 #joinButton{
     width: 50%;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #21313C;
+    color: #FAFBFC;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -85,6 +85,5 @@ body {
     margin-right: auto;
     margin-left: auto;
     font-size: 20px;
-    background-color: #3A3B3A;
     font-family: 'Raleway', sans-serif;
 }

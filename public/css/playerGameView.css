@@ -1,30 +1,39 @@
-html, body { height: 90%; padding: 0; margin: 0; }
-button{
-    width: 50%; height: 50%; float: left;
-}
-#answer1{
-    background-color: #4CAF50;
-}
-#answer2{
-    background-color: #f94a1e;
-}
-#answer3{
-    background-color: #3399ff;
-}
-#answer4{
-    background-color: #ff9933;
+html, body { 
+    height: 100%; 
+    padding: 0; 
+    margin: 0; 
+    background-color: #FAFBFC;
 }
 
-#buttons{
+button{
+    width: 50%; height: 45vh; float: left;
+}
+#answer1{
+    background-color: #01D05B; font-size:7em;
+}
+#answer2{
+    background-color: #2F9FC5; font-size:7em;
+}
+#answer3{
+    background-color: #D3509B; font-size:7em;
+}
+#answer4{
+    background-color: #F97216; font-size:7em;
+}
+
+#button{
     text-align: center;
+    font-size: 10 rem;
 }
 #nameText{
     font-family: 'Raleway', sans-serif;
     padding: 0px 10px;
+    font-size: 2em;
 }
 #scoreText{
     font-family: 'Raleway', sans-serif;
     padding: 0px 10px;
+    font-size: 2em;
 }
 #message{
     font-family: 'Raleway', sans-serif;
