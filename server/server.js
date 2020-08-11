@@ -18,8 +18,7 @@ var players = new Players();
 //Mongodb setup
 var MongoClient = require('mongodb').MongoClient;
 var mongoose = require('mongoose');
-var url = "mongodb://localhost:27017/";
-
+//var url = "mongodb://localhost:27017/";
 
 
 app.use(express.static(publicPath));
@@ -320,6 +319,7 @@ io.on('connection', (socket) => {
     
                 var dbo = db.db('kahootDB');
                 var query = { id:  parseInt(gameid)};
+                var currDS = new Date();
                 dbo.collection("kahootGames").find(query).toArray(function(err, res) {
                     if (err) throw err;
                     
@@ -350,6 +350,8 @@ io.on('connection', (socket) => {
                         var third = {name: "", score: 0};
                         var fourth = {name: "", score: 0};
                         var fifth = {name: "", score: 0};
+
+                        dbo.collection("scoreResults").update({ gameid:  parseInt(gameid), pin:parseInt(game.pin)}, {$push:{results:playersInGame}, $set:{updateDate:currDS}}, {upsert:true})
                         
                         for(var i = 0; i < playersInGame.length; i++){
                             console.log(playersInGame[i].gameData.score);
